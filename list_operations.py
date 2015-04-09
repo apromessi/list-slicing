@@ -25,7 +25,7 @@ def head(input_list):
     [ A, B, C, D, E, F ] --> A
     """
 
-    return None
+    return input_list[0]
 
 
 def tail(input_list):
@@ -34,7 +34,7 @@ def tail(input_list):
     [ A, B, C, D ] --> [ B, C, D ]
     """
 
-    return []
+    return input_list[1:]
 
 
 def last(input_list):
@@ -43,7 +43,7 @@ def last(input_list):
     [ A, B, C, D ] --> D
     """
 
-    return []
+    return input_list[-1]
 
 
 def init(input_list):
@@ -52,7 +52,7 @@ def init(input_list):
     [ A, B, C, D ] --> [ A, B, C ]
     """
 
-    return []
+    return input_list[:-1]
 
 
 ##############################################################################
