@@ -181,8 +181,10 @@ def custom_len(input_list):
     """
     like len(input_list), should return the number of items in the list
     """
-
-    return 0
+    counter = 0
+    for i in input_list:
+        counter += 1
+    return counter
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -199,18 +201,16 @@ def custom_append(input_list, value):
     like input_list.append(value), should add the value to the end of the list
     and return nothing
     """
-
-    pass
-
+    input_list[-1:] = input_list[-1] + [value]
+    return
 
 def custom_extend(input_list, second_list):
     """
     like input_list.extend(second_list), should append every item in the second
     list to the end of the first list and return nothing
     """
-
-    pass
-
+    input_list[-1:] = input_list[-1] + second_list
+    return
 
 def custom_insert(input_list, index, value):
     """
