@@ -201,16 +201,16 @@ def custom_append(input_list, value):
     like input_list.append(value), should add the value to the end of the list
     and return nothing
     """
-    input_list[-1:] = input_list[-1] + [value]
-    return
+    input_list[-1:] = input_list[-1:] + [value]
+
 
 def custom_extend(input_list, second_list):
     """
     like input_list.extend(second_list), should append every item in the second
     list to the end of the first list and return nothing
     """
-    input_list[-1:] = input_list[-1] + second_list
-    return
+    input_list[-1:] = input_list[-1:] + second_list
+    
 
 def custom_insert(input_list, index, value):
     """
