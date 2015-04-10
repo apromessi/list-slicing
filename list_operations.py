@@ -130,8 +130,8 @@ def replace_middle(input_list):
     that order, except for the first two and last two elements.
     [ A, B, C, D, E, F, G, H, I ] --> [ A, B, 42, 37, H, I ]
     """
-
-    pass
+    input_list[2:-2] = [42, 37]
+    return input_list
 
 
 def delete_third_and_seventh(input_list):
@@ -139,8 +139,9 @@ def delete_third_and_seventh(input_list):
     Remove the third and seventh elements of the input list.
     [ A, B, C, D, E, F, G, H ] --> [ A, B, D, E, F, H ]
     """
-
-    pass
+    input_list.pop(2) #length decreases by one
+    input_list.pop(5) #therefore, all original indices above index 2 decreases by one
+    return input_list
 
 
 def delete_middle(input_list):
@@ -149,8 +150,10 @@ def delete_middle(input_list):
     last two.
     [ A, B, C, D, E, F, G, H ] --> [ A, B, G, H ]
     """
-
-    pass
+    list_to_remove = input_list[2:-2]
+    for i in list_to_remove:
+        input_list.remove(i)
+    return input_list
 
 
 ##############################################################################
